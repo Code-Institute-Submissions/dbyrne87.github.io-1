@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Find Your PerFect Holiday</title>
+<html>
+  <head>
+    <title>Place Autocomplete Hotel Search</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
     
-    <link href="/static/css/style.css" rel="stylesheet">
- 
-</head>
-<body>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-center">
+          <a class="navbar-brand" href="index.html" id="limitless">Find Your Perfect Getaway</a>
+      </nav>
+  </header>
+  
   <div class="container" style="width:600px;">
    <h2 align="center">Find Your Perfect Holiday Destination</h2><br /><br />
    <select name="country" id="country" class="form-control input-lg">
@@ -25,9 +28,130 @@
     <option value="">Select state</option>
    </select>
   </div>
- </body>
-</html>
-    
-   <script type="text/javascript" src="/static/js/maps.js"></script>
-</body>
+  
+  <!-- Search and Filter -->
+  <section class="container-fluid">
+      <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 find">
+              <h4>Type your Dream Destination below to find out everything you need to know</h4>
+              <input id="autocomplete" class="form-control mr-sm-2" placeholder="Search" type="text" required/>
+              <form class="form-filter">
+                  <label class="radio-inline">
+                      <input id="type-accommodation" type="radio" name="filter" value="accommodation" ><span class="radio-button">Accommodation</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-food" type="radio" name="filter" value="food"><span class="radio-button">Restaurant</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-poi" type="radio" name="filter" value="poi"><span class="radio-button">Point of Interest</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-atm" type="radio" name="filter" value="atm"><span class="radio-button">ATM</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-stores" type="radio" name="filter" value="stores"><span class="radio-button">Store</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-drink" type="radio" name="filter" value="drink"><span class="radio-button">Pub</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-nightclub" type="radio" name="filter" value="nightclub"><span class="radio-button">Nightclub</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-casino" type="radio" name="filter" value="casino"><span class="radio-button">Casino</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-bowling-alley" type="radio" name="filter" value="bowling-alley"><span class="radio-button">Bowling Alley</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-shopping-mall" type="radio" name="filter" value="shopping-mall"><span class="radio-button">Shopping Mall</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-park" type="radio" name="filter" value="park"><span class="radio-button">Parks</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-amusement-park" type="radio" name="filter" value="amusement-park"><span class="radio-button">Amusement Park</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-museum" type="radio" name="filter" value="museum"><span class="radio-button">Museum</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-aquarium" type="radio" name="filter" value="aquarium"><span class="radio-button">Aquarium</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-zoo" type="radio" name="filter" value="zoo"><span class="radio-button">Zoo</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-train-station" type="radio" name="filter" value="train-station"><span class="radio-button">Train Station</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-taxi-stand" type="radio" name="filter" value="taxi-stand"><span class="radio-button">Taxi Stands</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-transit-station" type="radio" name="filter" value="transit-station"><span class="radio-button">Bus Station</span>
+                  </label>
+                  <label class="radio-inline">
+                      <input id="type-subway-station" type="radio" name="filter" value="subway-station"><span class="radio-button">Subway Station</span>
+                  </label>
+              </form>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Map API -->
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div id="map"></div>
+          </div>
+      </div>
+  </div>
+  
+  <!-- Search Results -->
+  <section class="container-fluid">
+      <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 hint-box">
+              <ul style="list-style-type:none;">
+                  <li id="results"></li>
+              </ul>
+          </div>
+      </div>
+      <div style="display:none;">
+          <div id="place-details">
+              <ul class="detail-list">
+                  <!-- Place Website -->
+                  <li id="url"></li>
+                  <!-- Place address -->
+                  <li class="detail-name">Address:</li>
+                  <li id="address"></li>
+                  <!-- Place telephone number -->
+                  <li class="detail-name">Telephone:</li>
+                  <li id="phone"></li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-warning">
+      <div class="container">
+          <div class="row text-center">
+              <div class="col-xs 12 col-sm-12 col-md-12 col-lg-12">
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              </div>
+          </div>
+      </div>
+  </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXG32paXW2Dkz1lkI41-Rmk0WraOaF374&libraries=places&callback=initMap" defer></script>
+    <script type="text/javascript" src="/static/js/dynamic-dropdown.js" ></script>  
+    <script type="text/javascript" src="/static/js/maps.js"></script>
+      
+  </body>
 </html>
