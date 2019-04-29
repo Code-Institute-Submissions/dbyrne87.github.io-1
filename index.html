@@ -14,11 +14,11 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-center">
-          <a class="navbar-brand" href="index.html" id="limitless">Find Your Perfect Getaway</a>
+          <a class="navbar-brand" href="index.html" id="getaway">Find Your Perfect Getaway</a>
       </nav>
   </header>
   
-  <button onclick="writeToDocument('')">People</button>
+  <button onclick="writeToDocument('')">Weather</button>
   <div id="data"></div>
   
   <div class="container" style="width:600px;">
@@ -28,7 +28,7 @@
    </select>
    <br />
    <select name="state" id="state" class="form-control input-lg">
-    <option value="">Select state</option>
+    <option id="currentSelection" value="">Select state</option>
    </select>
   </div>
   
@@ -37,7 +37,8 @@
       <div class="row justify-content-center">
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 find">
               <h4>Type your Dream Destination below to find out everything you need to know</h4>
-              <input id="autocomplete" class="form-control mr-sm-2" placeholder="Search" type="text" required/>
+              <input id="autocomplete" class="form-control mr-sm-2" placeholder="Search" type="text"/>
+              <input id="pac-input" class="controls" type="text" placeholder="Search Box">
               <form class="form-filter">
                   <label class="radio-inline">
                       <input id="type-accommodation" type="radio" name="filter" value="accommodation" ><span class="radio-button">Accommodation</span>
@@ -156,6 +157,7 @@
     <script type="text/javascript" src="/static/js/dynamic-dropdown.js" ></script>  
     <script type="text/javascript" src="/static/js/maps.js"></script>
     <script type="text/javascript" src="/static/js/weather.js"></script>
+    <script type="text/javascript" src="/static/js/test.js"></script>
       
   </body>
 </html>

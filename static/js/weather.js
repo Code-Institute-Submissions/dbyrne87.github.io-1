@@ -20,6 +20,6 @@ xhr.send();
 function writeToDocument(cb) {
     getWeatherData(function(data) {
         console.dir(data);
-        document.getElementById("data").innerHTML = 'The weather for' + data.name+ 'is currently ' + data.weather[0].description;
+        document.getElementById("data").innerHTML = 'The weather for ' + data.name + ' is currently ' + data.weather[0].description;
     });
 }

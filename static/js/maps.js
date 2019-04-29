@@ -3,28 +3,37 @@ var map;
 var markers = [];
 var infoWindow;
 var places;
+var getDropdownValue;
 
 // Initialise map
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
-        center: {lat: 54.5260, lng: 15.2551},
-        // Map controls allowing user to zoom in/out, switch to satellite mode and view streetview images
+    var pyrmont = new google.maps.LatLng(52.5666644, 4.7333304);
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: pyrmont,
+            zoom: 12,
+        // Allow user to zoom in and out, switch to satellite mode and view streetview images
         mapTypeControl: true,
         zoomControl: true,
         streetViewControl: true
     });
+ var pyrmont = new google.maps.LatLng(52.5666644, 4.7333304);
 
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: pyrmont,
+            zoom: 12
+        });
     // Info window with place details
     infoWindow = new google.maps.InfoWindow({
         content: document.getElementById('place-details')
     });
 
+
     // Autocomplete
     autocomplete = new google.maps.places.Autocomplete(
         document.getElementById('autocomplete'));
         places = new google.maps.places.PlacesService(map);
-        autocomplete.addListener('place_changed', onPlaceChanged); // Resets map to new area that has been searched
+        autocomplete.addListener('place_changed', onPlaceChanged);// Resets map to new area that has been searched
         document.getElementById('type-accommodation').addEventListener('change', onPlaceChanged);
         document.getElementById('type-food').addEventListener('change', onPlaceChanged);
         document.getElementById('type-poi').addEventListener('change', onPlaceChanged);
@@ -45,6 +54,17 @@ function initMap() {
         document.getElementById('type-transit-station').addEventListener('change', onPlaceChanged);
         document.getElementById('type-subway-station').addEventListener('change', onPlaceChanged);
 }
+
+$("#state").on('click', function(){
+    var val = $(this).val();
+    var cityText = $('#currentSelection').val();
+    if (val == 7) {
+        $('#autocomplete').val("Nairobi, Kenya");
+        
+    } else {
+        console.log(val);
+    }
+});
 
 // Select autocomplete query - return details of place and zoom into area
 function onPlaceChanged() {
