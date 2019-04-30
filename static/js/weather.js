@@ -1,6 +1,8 @@
+var currentCity = $('#address').val();
 var xhr = new XMLHttpRequest();
 var apiKey = '&appid=f184ae1290f9c405bd84c12d1b76f8c7';
-var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=London,uk';
+var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
+
 
 
 function getWeatherData(cb) {
@@ -11,8 +13,9 @@ xhr.onreadystatechange = function() {
     }
 };
 
-xhr.open("GET", apiUrl+ apiKey);
+xhr.open("GET", apiUrl+ currentCity+ apiKey);
 xhr.send();
+
 
 
 }

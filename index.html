@@ -18,7 +18,7 @@
       </nav>
   </header>
   
-  <button onclick="writeToDocument('')">Weather</button>
+  <button id="weather" onclick="writeToDocument('')">Weather</button>
   <div id="data"></div>
   
   <div class="container" style="width:600px;">
@@ -33,76 +33,38 @@
   </div>
   
   <!-- Search and Filter -->
-  <section class="container-fluid">
-      <div class="row justify-content-center">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 find">
-              <h4>Type your Dream Destination below to find out everything you need to know</h4>
-              <input id="autocomplete" class="form-control mr-sm-2" placeholder="Search" type="text"/>
-              <input id="pac-input" class="controls" type="text" placeholder="Search Box">
-              <form class="form-filter">
-                  <label class="radio-inline">
-                      <input id="type-accommodation" type="radio" name="filter" value="accommodation" ><span class="radio-button">Accommodation</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-food" type="radio" name="filter" value="food"><span class="radio-button">Restaurant</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-poi" type="radio" name="filter" value="poi"><span class="radio-button">Point of Interest</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-atm" type="radio" name="filter" value="atm"><span class="radio-button">ATM</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-stores" type="radio" name="filter" value="stores"><span class="radio-button">Store</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-drink" type="radio" name="filter" value="drink"><span class="radio-button">Pub</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-nightclub" type="radio" name="filter" value="nightclub"><span class="radio-button">Nightclub</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-casino" type="radio" name="filter" value="casino"><span class="radio-button">Casino</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-bowling-alley" type="radio" name="filter" value="bowling-alley"><span class="radio-button">Bowling Alley</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-shopping-mall" type="radio" name="filter" value="shopping-mall"><span class="radio-button">Shopping Mall</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-park" type="radio" name="filter" value="park"><span class="radio-button">Parks</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-amusement-park" type="radio" name="filter" value="amusement-park"><span class="radio-button">Amusement Park</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-museum" type="radio" name="filter" value="museum"><span class="radio-button">Museum</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-aquarium" type="radio" name="filter" value="aquarium"><span class="radio-button">Aquarium</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-zoo" type="radio" name="filter" value="zoo"><span class="radio-button">Zoo</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-train-station" type="radio" name="filter" value="train-station"><span class="radio-button">Train Station</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-taxi-stand" type="radio" name="filter" value="taxi-stand"><span class="radio-button">Taxi Stands</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-transit-station" type="radio" name="filter" value="transit-station"><span class="radio-button">Bus Station</span>
-                  </label>
-                  <label class="radio-inline">
-                      <input id="type-subway-station" type="radio" name="filter" value="subway-station"><span class="radio-button">Subway Station</span>
-                  </label>
-              </form>
-          </div>
-      </div>
-  </section>
-  
-  <!-- Map API -->
+  <div style="float: left; width: 400;">
+    <form name="frm_map" id="frm_map">
+        <table>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <input type="text" name="address" id="address" value="Dublin, Ireland">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="hidden" name="radius" id="radius" value="20" placeholder="In KM">
+                </td>
+            </tr>
+            <tr>
+                <th>Types</th>
+                <td>
+                    <div id="type_holder" style="height: 200px; overflow-y: scroll;">
+                        <!-- Dynamic Content -->    
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="button" value="Show" id="submit" onclick="renderMap();">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
   <div class="container">
       <div class="row justify-content-center">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -110,7 +72,38 @@
           </div>
       </div>
   </div>
-  
+   <div id="listing">
+      <table id="resultsTable">
+        <tbody id="results"></tbody>
+      </table>
+    </div>
+
+    <div style="display: none">
+      <div id="info-content">
+        <table>
+          <tr id="iw-url-row" class="iw_table_row">
+            <td id="iw-icon" class="iw_table_icon"></td>
+            <td id="iw-url"></td>
+          </tr>
+          <tr id="iw-address-row" class="iw_table_row">
+            <td class="iw_attribute_name">Address:</td>
+            <td id="iw-address"></td>
+          </tr>
+          <tr id="iw-phone-row" class="iw_table_row">
+            <td class="iw_attribute_name">Telephone:</td>
+            <td id="iw-phone"></td>
+          </tr>
+          <tr id="iw-rating-row" class="iw_table_row">
+            <td class="iw_attribute_name">Rating:</td>
+            <td id="iw-rating"></td>
+          </tr>
+          <tr id="iw-website-row" class="iw_table_row">
+            <td class="iw_attribute_name">Website:</td>
+            <td id="iw-website"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
   <!-- Search Results -->
   <section class="container-fluid">
       <div class="row justify-content-center">
