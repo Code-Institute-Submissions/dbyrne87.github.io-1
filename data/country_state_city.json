@@ -32,7 +32,10 @@
  {
   "id":"7",
   "name":"Nairobi, Kenya",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+  
  }, 
  {
   "id":"8",

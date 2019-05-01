@@ -8,6 +8,7 @@ $(document).ready(function(){
   $.getJSON('/data/country_state_city.json', function(data){
 
    html_code += '<option value="">Select '+id+'</option>';
+   
    $.each(data, function(key, value){
     if(id == 'country')
     {
@@ -25,6 +26,7 @@ $(document).ready(function(){
     }
    });
    $('#'+id).html(html_code);
+   
   });
 
  }
@@ -42,3 +44,11 @@ $(document).ready(function(){
   }
  });
 });
+
+
+
+function updateCity(){
+renderMap();
+writeToDocument();
+getCityDetails();
+}

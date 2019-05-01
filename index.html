@@ -18,7 +18,7 @@
       </nav>
   </header>
   
-  <button id="weather" onclick="writeToDocument('')">Weather</button>
+  <button id="weather" onclick="">Weather</button>
   <div id="data"></div>
   
   <div class="container" style="width:600px;">
@@ -31,6 +31,11 @@
     <option id="currentSelection" value="">Select state</option>
    </select>
   </div>
+    <div class="cityInfo">
+    </div>
+    
+    
+  </div>
   
   <!-- Search and Filter -->
   <div style="float: left; width: 400;">
@@ -39,7 +44,7 @@
             <tr>
                 <th>Address</th>
                 <td>
-                    <input type="text" name="address" id="address" value="Dublin, Ireland">
+                    <input type="text" name="address" id="address" class="newAddress" value="Dublin, Ireland">
                 </td>
             </tr>
             <tr>
@@ -58,7 +63,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="button" value="Show" id="submit" onclick="renderMap();">
+                    <input type="button" value="Show" id="submit" onclick="updateCity();">
                     <input type="reset" value="Reset">
                 </td>
             </tr>

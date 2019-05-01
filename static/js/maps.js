@@ -23,12 +23,11 @@ var autocomplete;
 var selectedTypes = [];
 
 $("#state").on('click', function(){
-    var val = $(this).val();
+    var val = $('#state').val();
     var cityText = $('#currentSelection').val();
     if (val == 7) {
         $('#address').val("Nairobi, Kenya");
-        var currentCity = "Nairobi, Kenya";
-    }
+        }
 });
 
 function initMap()
