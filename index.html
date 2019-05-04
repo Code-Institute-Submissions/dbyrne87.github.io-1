@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Place Autocomplete Hotel Search</title>
+    <title>Trip Finder</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     
+    <link rel="icon" href="/static/assets/images/bird_cdb_icon.ico">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
     <link rel="stylesheet" href="/static/css/style.css">
     
   </head>
 
-  <body>
+  <body class="container-fluid">
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-center">
-          <a class="navbar-brand" href="index.html" id="getaway">Find Your Perfect Getaway</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
+          <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
       </nav>
-  </header>
+    </header>
   
-  <button id="weather" onclick="">Weather</button>
-  <div id="data"></div>
-  
-  <div class="container" style="width:600px;">
-   <h2 align="center">Find Your Perfect Holiday Destination</h2><br /><br />
-   <select name="country" id="country" class="form-control input-lg">
+      <div class="text-center">
+        <p class="imageInner" id="imageInnerText">Your Journey Starts Here</p>
+        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner" id="imageInnerButton" data-toggle="modal" data-target="#modal">Where To?</button>
+      </div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Pick from our selection of hand picked cities or Search anywhere in the world.</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form name="frm_map" id="frm_map">
+        <select name="country" id="country" class="form-control input-lg">
     <option value="">Select country</option>
    </select>
    <br />
    <select name="state" id="state" class="form-control input-lg">
     <option id="currentSelection" value="">Select state</option>
    </select>
+
+   <input type="text" name="address" id="address" class="newAddress form-control " value="Dublin, Ireland" aria-label="city-name" aria-describedby="city-name">
+   </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" value="Show" id="submit" onclick="updateCity();">Let's Go</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  <div id="data"></div>
+  
+  <div class="container">
+   
   </div>
     <div class="cityInfo">
     </div>
@@ -49,7 +81,7 @@
             </tr>
             <tr>
                 <td>
-                    <input type="hidden" name="radius" id="radius" value="20" placeholder="In KM">
+                    <input type="hidden" name="radius" id="radius" value="20">
                 </td>
             </tr>
             <tr>
@@ -63,7 +95,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="button" value="Show" id="submit" onclick="updateCity();">
+                   
                     <input type="reset" value="Reset">
                 </td>
             </tr>
@@ -135,18 +167,11 @@
   </section>
   
   <!-- Footer -->
-  <footer class="bg-warning">
-      <div class="container">
-          <div class="row text-center">
-              <div class="col-xs 12 col-sm-12 col-md-12 col-lg-12">
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-              </div>
-          </div>
-      </div>
-  </footer>
+  <footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
+          <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+      </nav>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -155,7 +180,7 @@
     <script type="text/javascript" src="/static/js/dynamic-dropdown.js" ></script>  
     <script type="text/javascript" src="/static/js/maps.js"></script>
     <script type="text/javascript" src="/static/js/weather.js"></script>
-    <script type="text/javascript" src="/static/js/test.js"></script>
+    <script type="text/javascript" src="/static/js/dynamic-city-info.js"></script>
       
   </body>
 </html>

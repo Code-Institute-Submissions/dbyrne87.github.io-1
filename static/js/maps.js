@@ -24,7 +24,6 @@ var selectedTypes = [];
 
 $("#state").on('click', function(){
     var val = $('#state').val();
-    var cityText = $('#currentSelection').val();
     if (val == 7) {
         $('#address').val("Nairobi, Kenya");
         }
@@ -114,10 +113,6 @@ function createMarker(place, icon) {
     var marker = new google.maps.Marker({
         map: map,
         position: place.geometry.location,
-        icon: {
-            url: icon,
-            scaledSize: new google.maps.Size(20, 20) // pixels
-        },
         animation: google.maps.Animation.DROP
     });
     

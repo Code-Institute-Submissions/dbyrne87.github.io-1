@@ -1,17 +1,52 @@
-/*-- HTML and Body --*/
-html, body {
-    min-height: 100%;
-    width: 100%;
+.container-fluid {
     margin: 0;
     padding: 0;
 }
 
-body {
-    background: white;
-    background-size: cover;
+body{
+    background: url("/static/assets/images/jason-cooper-482297-unsplash.jpg");
+    background-size: 100% ;
     background-repeat: no-repeat;
-    background-position: center;
+    
 }
+
+#imageInnerText{
+    padding-top: 10%;
+    font-weight: bold;
+    color: white;
+    font-size: xx-large;
+    
+}
+
+#imageInnerButton{
+    font-weight: bold;
+    background-color: white;
+    border-radius: 40px;
+    
+}
+
+.btn{
+    color: orange;
+    background: white;
+    border: solid orange 5px;
+        
+}
+
+.btn:hover{
+    animation-name: link-backgrounds;
+    animation-duration: 4s;
+    color: orange;
+}
+
+@keyframes link-backgrounds {
+  from {background-color: white;}
+  to {background-color: purple;}
+}
+
+div.pac-container {
+   z-index: 1050 !important;
+}
+
 
 #map {
     min-height: 500px;

@@ -49,6 +49,5 @@ $(document).ready(function(){
 
 function updateCity(){
 renderMap();
-writeToDocument();
-getCityDetails();
+writeTheWeather();
 }
