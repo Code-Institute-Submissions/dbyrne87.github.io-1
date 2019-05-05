@@ -24,6 +24,6 @@ xhr.send();
 function writeTheWeather(cb) {
     getWeatherData(function(data) {
         console.dir(data);
-        document.getElementById("data").innerHTML = 'The weather for ' + data.name + ' is currently ' + data.weather[0].description;
+        document.getElementById("weatherdata").innerHTML = 'The weather for ' + data.name + ' is currently "' + data.weather[0].description + '" with a tempeture currently at ' + Math.round(data.main.temp-273.15) + '&#8451 and a max tempeture of ' + Math.round(data.main.temp_max-273.15) + '&#8451';
     });
 }

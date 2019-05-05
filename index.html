@@ -4,6 +4,9 @@
     <title>Trip Finder</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <meta name="description" content="Travel Site to allow users to search for their next holiday destination and find detailed information based on their search results">
+    <meta name="keywords" content="holiday, holidays, holiday packages, travel, planning, hotel, hotels, motel, bed and breakfast, inn, review, reviews, popular, plan, map, maps, golf, ski, articles, attractions, advice, restaurants"/>
+    <meta name="author" content="Declan Byrne">
     
     <link rel="icon" href="/static/assets/images/bird_cdb_icon.ico">
     
@@ -19,10 +22,25 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
-          <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+        <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+        <ul class="navbar-nav ml-auto">
+        <li class="social-icons">
+          <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+        </li>
+        <li class="social-icons">
+          <a class="social-icon" href="https://www.snapchat.com/l/en-gb/"  target="_blank"><i class="fab fa-snapchat-square"></i></a>
+        </li>
+        <li class="social-icons">
+          <a class="social-icon" href="https://www.youtube.com/"  target="_blank"><i class="fab fa-youtube-square"></i></a>
+        </li>
+        <li class="social-icons">
+          <a class="social-icon " href="https://twitter.com/?lang=en"  target="_blank"><i class="fab fa-twitter-square"></i></a>
+        </li>
+      </ul>
       </nav>
     </header>
   
+      
       <div class="text-center">
         <p class="imageInner" id="imageInnerText">Your Journey Starts Here</p>
         <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner" id="imageInnerButton" data-toggle="modal" data-target="#modal">Where To?</button>
@@ -57,13 +75,11 @@
     </div>
   </div>
 </div>
-    
-  <div id="data"></div>
-  
-  <div class="container">
-   
+
+<div class="hiddenDiv">  
+  <div class="alert alert-success col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
   </div>
-    <div class="cityInfo">
+    <div class="cityInfo mx-auto">
     </div>
     
     

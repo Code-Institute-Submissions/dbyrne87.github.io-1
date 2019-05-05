@@ -10,6 +10,10 @@ body{
     
 }
 
+.navbar-nav{
+    flex-direction: row;
+}
+
 #imageInnerText{
     padding-top: 10%;
     font-weight: bold;
@@ -43,8 +47,39 @@ body{
   to {background-color: purple;}
 }
 
-div.pac-container {
+.pac-container {
    z-index: 1050 !important;
+}
+
+.social-icon{
+  margin-right: 40px !important;
+  display: inline-block;
+  color: #FDFDFF;
+  border: none;
+  background-color: #FFC107;
+  font-size: x-large;
+  
+}
+
+.social-icon:hover{
+    color: purple;
+    
+}
+
+@media (max-width:500px) {
+.social-icons{
+  width: 36px;
+} 
+}
+
+.hiddenDiv{
+    display: none;
+    margin-top: 50px;
+    padding: 50px;
+    border:10px solid #FFC107;
+    border-radius: 10px;
+    background-color: white;
+    
 }
 
 

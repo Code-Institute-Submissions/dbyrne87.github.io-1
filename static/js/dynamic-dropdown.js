@@ -45,9 +45,15 @@ $(document).ready(function(){
  });
 });
 
-
+function displayDiv() {
+   $(".hiddenDiv").fadeIn( 2000, function() {
+    $(".hiddenDiv").css("display", "block")
+   }); 
+}
 
 function updateCity(){
 renderMap();
 writeTheWeather();
+writeToDocument();
+displayDiv();
 }
