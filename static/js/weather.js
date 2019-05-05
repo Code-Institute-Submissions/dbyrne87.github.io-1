@@ -20,10 +20,18 @@ xhr.send();
 
 
 }
+        
 
 function writeTheWeather(cb) {
     getWeatherData(function(data) {
+        if ([data.weather[0].description] == "broken clouds") {
+            $(".cloudy").css("display", "block");
+            $("#weatherdata").attr('class', 'alert alert-secondary col-sm-4 mx-auto text-center')
+            
+        }
         console.dir(data);
-        document.getElementById("weatherdata").innerHTML = 'The weather for ' + data.name + ' is currently "' + data.weather[0].description + '" with a tempeture currently at ' + Math.round(data.main.temp-273.15) + '&#8451 and a max tempeture of ' + Math.round(data.main.temp_max-273.15) + '&#8451';
+        document.getElementById("weatherdata").innerHTML = 'The weather for ' + data.name + ' is currently "' + data.weather[0].description + '" with a temperature currently at ' + Math.round(data.main.temp-273.15) + '&#8451 and a max temperature of ' + Math.round(data.main.temp_max-273.15) + '&#8451';
     });
 }
+
+

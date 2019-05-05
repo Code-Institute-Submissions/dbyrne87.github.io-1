@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Sniglet" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Sniglet" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/style.css">
     
   </head>
 
-  <body class="container-fluid">
+  <body>
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
@@ -70,62 +71,79 @@
    </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" value="Show" id="submit" onclick="updateCity();">Let's Go</button>
+        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner" data-dismiss="modal" value="Show" id="submit" onclick="updateCity();">Let's Go</button>
       </div>
     </div>
   </div>
 </div>
 
-<div class="hiddenDiv">  
-  <div class="alert alert-success col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
-  </div>
-    <div class="cityInfo mx-auto">
-    </div>
-    
-    
-  </div>
+<div class="hiddenDiv rounded text-center">
+  <p id="hiddenDivInner">Current Weather</p> 
   
-  <!-- Search and Filter -->
-  <div style="float: left; width: 400;">
-    <form name="frm_map" id="frm_map">
-        <table>
-            <tr>
-                <th>Address</th>
-                <td>
-                    <input type="text" name="address" id="address" class="newAddress" value="Dublin, Ireland">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="hidden" name="radius" id="radius" value="20">
-                </td>
-            </tr>
-            <tr>
-                <th>Types</th>
-                <td>
-                    <div id="type_holder" style="height: 200px; overflow-y: scroll;">
-                        <!-- Dynamic Content -->    
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                   
-                    <input type="reset" value="Reset">
-                </td>
-            </tr>
-        </table>
-    </form>
+  <div class="icon sun-shower mx-auto">
+  <div class="cloud"></div>
+  <div class="sun">
+    <div class="rays"></div>
+  </div>
+  <div class="rain"></div>
 </div>
-  <div class="container">
-      <div class="row justify-content-center">
+
+<div class="icon thunder-storm mx-auto">
+  <div class="cloud"></div>
+  <div class="lightning">
+    <div class="bolt"></div>
+    <div class="bolt"></div>
+  </div>
+</div>
+
+<div class="icon cloudy mx-auto">
+  <div class="cloud"></div>
+  <div class="cloud"></div>
+</div>
+
+<div class="icon flurries mx-auto">
+  <div class="cloud"></div>
+  <div class="snow">
+    <div class="flake"></div>
+    <div class="flake"></div>
+  </div>
+</div>
+
+<div class="icon sunny mx-auto">
+  <div class="sun">
+    <div class="rays"></div>
+  </div>
+</div>
+
+<div class="icon rainy mx-auto">
+  <div class="cloud"></div>
+  <div class="rain"></div>
+</div>
+  <div class="alert alert-warning col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
+  </div>
+    <div class="cityInfo">
+    </div>
+     <input type="hidden" name="radius" id="radius" value="15">
+     <div class="form-group">
+       <p id="hiddenDivInner">Pick from a large list of amenities to mark them on the map. <br>Click on a icon for more info.</p>
+     <select class="form-control col-sm-4 mx-auto" id="type_holder">
+    </select>
+    </div>
+     <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner" data-dismiss="modal" value="Show" id="refreshMap" onclick="updateCity();">Update Map</button>
+     <div class="row justify-content-center">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div id="map"></div>
           </div>
       </div>
-  </div>
-   <div id="listing">
+      
+      <footer>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
+          <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+        </nav>
+      </footer>
+      
+      </div>
+      <div id="listing">
       <table id="resultsTable">
         <tbody id="results"></tbody>
       </table>
@@ -183,11 +201,11 @@
   </section>
   
   <!-- Footer -->
-  <footer>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
-          <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
-      </nav>
-    </footer>
+  
+     
+    
+  </div>
+   
 
     <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

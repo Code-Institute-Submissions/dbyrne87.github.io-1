@@ -4,11 +4,13 @@ $(document).ready(function(){
 
     var types = ['airport','amusement_park','aquarium','art_gallery','atm','bank','bar','bowling_alley','bus_station','cafe','campground','car_rental','casino','church','embassy','gas_station','gym','hair_care','hindu_temple','hospital','lodging','meal_takeaway','mosque','movie_theater','museum','night_club','park','parking','pharmacy','restaurant','shopping_mall','spa','stadium','subway_station','synagogue','taxi_stand','train_station','transit_station','zoo'];
     var html = '';
+    
 
     $.each(types, function( index, value ) {
         var name = value.replace(/_/g, " ");
-        html += '<div><label><input type="radio" class="types" name="pickOne" value="'+ value +'" />'+ capitalizeFirstLetter(name) +'</label></div>';
+        html += '<option name="pickOne" id="whatValue" value="'+ value +'">'+ capitalizeFirstLetter(name) + '</option>';
     });
+    
 
     $('#type_holder').html(html);
 });
@@ -45,13 +47,8 @@ function renderMap()
     var radius  = parseInt(document.getElementById('radius').value) * 1000;
     
     // get the selected type
-    selectedTypes = [];
-    $('.types').each(function(){
-        if($(this).is(':checked'))
-        {
-            selectedTypes.push($(this).val());
-        }
-    });
+    
+    var selectedTypes = $('#type_holder').val();
 
     var geocoder    = new google.maps.Geocoder();
     var selLocLat   = 0;
@@ -81,7 +78,7 @@ function renderMap()
                 //radius: 5000,
                 //types: ["atm"]
                 radius: radius,
-                types: selectedTypes
+                types: [selectedTypes]
             };
 
             infowindow = new google.maps.InfoWindow();
