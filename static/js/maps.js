@@ -23,6 +23,7 @@ var map;
 var infowindow;
 var autocomplete;
 var selectedTypes = [];
+var service;
 
 $("#state").on('click', function(){
     var val = $('#state').val();
@@ -45,6 +46,8 @@ function renderMap()
     // Get the user defined values
     var address = document.getElementById('address').value;
     var radius  = parseInt(document.getElementById('radius').value) * 1000;
+    
+    
     
     // get the selected type
     
@@ -75,8 +78,6 @@ function renderMap()
 
             var request = {
                 location: pyrmont,
-                //radius: 5000,
-                //types: ["atm"]
                 radius: radius,
                 types: [selectedTypes]
             };
@@ -104,17 +105,34 @@ function callback(results, status)
     }
 }
 
-function createMarker(place, icon) {
-    var placeLoc = place.geometry.location;
 
-    var marker = new google.maps.Marker({
-        map: map,
-        position: place.geometry.location,
-        animation: google.maps.Animation.DROP
-    });
+function createMarker(place) {
     
-    google.maps.event.addListener(marker, 'click', function() {
-        infowindow.setContent(place.name+ '<br>' +place.vicinity);
-        infowindow.open(map, this);
-    });
+service = new google.maps.places.PlacesService(map);
+    
+  var placeLoc = place.geometry.location;
+  var marker = new google.maps.Marker({
+  map: map,
+  position: place.geometry.location
+ });
+ 
+ if (place.rating) {
+          var ratingHtml = '';
+          for (var i = 0; i < 5; i++) {
+            if (place.rating < (i + 0.5)) {
+              ratingHtml += '&#10025;';
+            } else {
+              ratingHtml += '&#10029;';
+            }
+          }
+ }
+
+var request = { placeId: place.place_id };
+service.getDetails(request, function(details, status) {
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address +'<br><a href=' + details.website + " target='_blank'>Visit Their Website</a><br>" + details.international_phone_number + "<br>Rated:&#10029;&#10029;&#10029;&#10029;/5 on Google Reviews");
+    infowindow.open(map, this);
+    console.log(details);
+   });
+ });
 }

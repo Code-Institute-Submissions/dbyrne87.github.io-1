@@ -42,36 +42,35 @@
     </header>
   
       
-      <div class="text-center">
+      <div class="align-self-center text-center">
         <p class="imageInner" id="imageInnerText">Your Journey Starts Here</p>
-        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner" id="imageInnerButton" data-toggle="modal" data-target="#modal">Where To?</button>
+        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner imageInnerButton" data-toggle="modal" data-target="#modal">Where To?</button>
       </div>
 
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalTitle">Pick from our selection of hand picked cities or Search anywhere in the world.</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-      </div>
       <div class="modal-body">
         <form name="frm_map" id="frm_map">
+          <h5 class="modal-title text-center" id="modalTitle">Pick from our selection of hand picked cities</h5>
         <select name="country" id="country" class="form-control input-lg">
     <option value="">Select country</option>
    </select>
-   <br />
+   <br>
    <select name="state" id="state" class="form-control input-lg">
     <option id="currentSelection" value="">Select state</option>
    </select>
-
+    <p id="orTagLine"><span id="orTag">&nbsp;OR&nbsp;</span></p>
+    <h5 class="modal-title text-center" id="modalTitle">Search anywhere in the world.</h5>
    <input type="text" name="address" id="address" class="newAddress form-control " value="Dublin, Ireland" aria-label="city-name" aria-describedby="city-name">
    </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner" data-dismiss="modal" value="Show" id="submit" onclick="updateCity();">Let's Go</button>
+        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner imageInnerButton mx-auto" data-dismiss="modal" value="Show" id="submit" onclick="updateCity();">Let's Go</button>
       </div>
     </div>
   </div>
@@ -79,7 +78,6 @@
 
 <div class="hiddenDiv rounded text-center">
   <p id="hiddenDivInner">Current Weather</p> 
-  
   <div class="icon sun-shower mx-auto">
   <div class="cloud"></div>
   <div class="sun">
@@ -129,7 +127,7 @@
      <select class="form-control col-sm-4 mx-auto" id="type_holder">
     </select>
     </div>
-     <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner" data-dismiss="modal" value="Show" id="refreshMap" onclick="updateCity();">Update Map</button>
+     <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner imageInnerButton" data-dismiss="modal" value="Show" id="refreshMap" onclick="updateCity();">Update Map</button>
      <div class="row justify-content-center">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
               <div id="map"></div>
@@ -141,69 +139,6 @@
           <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
         </nav>
       </footer>
-      
-      </div>
-      <div id="listing">
-      <table id="resultsTable">
-        <tbody id="results"></tbody>
-      </table>
-    </div>
-
-    <div style="display: none">
-      <div id="info-content">
-        <table>
-          <tr id="iw-url-row" class="iw_table_row">
-            <td id="iw-icon" class="iw_table_icon"></td>
-            <td id="iw-url"></td>
-          </tr>
-          <tr id="iw-address-row" class="iw_table_row">
-            <td class="iw_attribute_name">Address:</td>
-            <td id="iw-address"></td>
-          </tr>
-          <tr id="iw-phone-row" class="iw_table_row">
-            <td class="iw_attribute_name">Telephone:</td>
-            <td id="iw-phone"></td>
-          </tr>
-          <tr id="iw-rating-row" class="iw_table_row">
-            <td class="iw_attribute_name">Rating:</td>
-            <td id="iw-rating"></td>
-          </tr>
-          <tr id="iw-website-row" class="iw_table_row">
-            <td class="iw_attribute_name">Website:</td>
-            <td id="iw-website"></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  <!-- Search Results -->
-  <section class="container-fluid">
-      <div class="row justify-content-center">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 hint-box">
-              <ul style="list-style-type:none;">
-                  <li id="results"></li>
-              </ul>
-          </div>
-      </div>
-      <div style="display:none;">
-          <div id="place-details">
-              <ul class="detail-list">
-                  <!-- Place Website -->
-                  <li id="url"></li>
-                  <!-- Place address -->
-                  <li class="detail-name">Address:</li>
-                  <li id="address"></li>
-                  <!-- Place telephone number -->
-                  <li class="detail-name">Telephone:</li>
-                  <li id="phone"></li>
-              </ul>
-          </div>
-      </div>
-  </section>
-  
-  <!-- Footer -->
-  
-     
-    
   </div>
    
 
@@ -215,6 +150,5 @@
     <script type="text/javascript" src="/static/js/maps.js"></script>
     <script type="text/javascript" src="/static/js/weather.js"></script>
     <script type="text/javascript" src="/static/js/dynamic-city-info.js"></script>
-      
   </body>
 </html>

@@ -1,25 +1,37 @@
 body{
     margin: 0;
     padding: 0;
-    background: url("/static/assets/images/jason-cooper-482297-unsplash.jpg");
-    background-size: cover ;
+    background: url("/static/assets/images/city-top-crop.jpg");
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     color: white;
     font-family: 'Sniglet', 'Comfortaa', cursive;
 }
-
+@media (max-width: 415px) {
+  body {
+    background: url("/static/assets/images/city-top-crop-sm.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  
+}
 .navbar-nav{
     flex-direction: row;
 }
 
+.modal-title{
+  color: black;
+  
+}
+
 #imageInnerText{
-    padding-top: 10%;
+    margin-top: 30vh;
     font-weight: bold;
     font-size: xx-large;
     
 }
 
-#imageInnerButton{
+.imageInnerButton{
     font-weight: bold;
     border-radius: 40px;
     
@@ -35,12 +47,43 @@ body{
 .btn:hover{
     animation-name: link-backgrounds;
     animation-duration: 4s;
-    color: #FFC107;
+    color: white;
 }
 
 @keyframes link-backgrounds {
   from {background-color: white;}
-  to {background-color: purple;}
+  to {background-color: #F09819;}
+}
+
+.close{
+  margin: 10px 20px 0 0;
+}
+
+.cityInfo{
+  border-bottom: solid #FFC107 5px;
+  margin-bottom: 20px;
+  
+}
+
+.gm-style-iw{
+  color:black;
+  
+}
+
+#orTagLine{
+  width:100%; 
+  text-align:center; 
+  border-bottom: 1px solid #000; 
+  line-height:0.1em; 
+  margin-top:28px;
+  
+}
+
+#orTag{
+  background:#fff; 
+  color: black;
+  
+  
 }
 
 .pac-container {
@@ -48,7 +91,7 @@ body{
 }
 
 .social-icon{
-  margin-right: 40px !important;
+  margin-right: 40px;
   display: inline-block;
   color: #FDFDFF;
   border: none;
@@ -58,13 +101,13 @@ body{
 }
 
 .social-icon:hover{
-    color: purple;
+    color: #F09819;
     
 }
 
 @media (max-width:500px) {
 .social-icons{
-  width: 36px;
+  width: 29px;
 } 
 }
 
@@ -73,7 +116,7 @@ body{
     margin-top: 50px;
     padding: 50px;
     border:10px solid #FFC107;
-    background-color: #8e8e8e;
+    background-image: linear-gradient(to right, #1A2980, #26D0CE);
     
 }
 
@@ -93,6 +136,12 @@ body{
 
 #map {
     min-height: 500px;
+}
+
+#infoWindowHeader{
+  color: black;
+  font-weight: bold;
+  
 }
 
 @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
