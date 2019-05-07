@@ -45,7 +45,7 @@ function renderMap()
     
     // Get the user defined values
     var address = document.getElementById('address').value;
-    var radius  = parseInt(document.getElementById('radius').value) * 1000;
+    var radius  = 25000;
     
     
     
@@ -115,22 +115,12 @@ service = new google.maps.places.PlacesService(map);
   map: map,
   position: place.geometry.location
  });
- 
- if (place.rating) {
-          var ratingHtml = '';
-          for (var i = 0; i < 5; i++) {
-            if (place.rating < (i + 0.5)) {
-              ratingHtml += '&#10025;';
-            } else {
-              ratingHtml += '&#10029;';
-            }
-          }
- }
 
 var request = { placeId: place.place_id };
+
 service.getDetails(request, function(details, status) {
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address +'<br><a href=' + details.website + " target='_blank'>Visit Their Website</a><br>" + details.international_phone_number + "<br>Rated:&#10029;&#10029;&#10029;&#10029;/5 on Google Reviews");
+    infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address +'<br><a href=' + details.website + " target='_blank'>Visit Their Website</a><br>" + details.international_phone_number + "<br>Rated: " + details.rating + "/5 on Google Reviews");
     infowindow.open(map, this);
     console.log(details);
    });

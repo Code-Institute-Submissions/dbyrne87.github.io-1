@@ -8,138 +8,163 @@
     <meta name="keywords" content="holiday, holidays, holiday packages, travel, planning, hotel, hotels, motel, bed and breakfast, inn, review, reviews, popular, plan, map, maps, golf, ski, articles, attractions, advice, restaurants"/>
     <meta name="author" content="Declan Byrne">
     
-    <link rel="icon" href="/static/assets/images/bird_cdb_icon.ico">
+    <link rel="icon" href="/static/assets/images/bird_cdb_icon.ico"> <!-- Owl Icon -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Sniglet" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa|Sniglet"> 
     <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/weather-display.css">
+    
     
   </head>
 
   <body>
-
+    
+    <!-- Navbar Section -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
-        <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <a class="navbar-brand" href="/index.html" id="getaway"> <i class="fab fa-earlybirds"></i>  TripFinder.com</a>
         <ul class="navbar-nav ml-auto">
-        <li class="social-icons">
-          <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-        </li>
-        <li class="social-icons">
-          <a class="social-icon" href="https://www.snapchat.com/l/en-gb/"  target="_blank"><i class="fab fa-snapchat-square"></i></a>
-        </li>
-        <li class="social-icons">
-          <a class="social-icon" href="https://www.youtube.com/"  target="_blank"><i class="fab fa-youtube-square"></i></a>
-        </li>
-        <li class="social-icons">
-          <a class="social-icon " href="https://twitter.com/?lang=en"  target="_blank"><i class="fab fa-twitter-square"></i></a>
-        </li>
-      </ul>
+          <li class="social-icons">
+            <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li class="social-icons">
+            <a class="social-icon" href="https://www.snapchat.com/l/en-gb/"  target="_blank"><i class="fab fa-snapchat-square"></i></a>
+          </li>
+          <li class="social-icons">
+            <a class="social-icon" href="https://www.youtube.com/"  target="_blank"><i class="fab fa-youtube-square"></i></a>
+          </li>
+          <li class="social-icons">
+            <a class="social-icon " href="https://twitter.com/?lang=en"  target="_blank"><i class="fab fa-twitter-square"></i></a>
+          </li>
+        </ul>
       </nav>
     </header>
   
-      
-      <div class="align-self-center text-center">
-        <p class="imageInner" id="imageInnerText">Your Journey Starts Here</p>
-        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner imageInnerButton" data-toggle="modal" data-target="#modal">Where To?</button>
-      </div>
+    <!-- Main Display -->
+    <div class="align-self-center text-center">
+      <p id="imageInnerText">Your Journey Starts Here</p>
+      <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow" data-toggle="modal" data-target="#modal">Where To?</button>
+    </div>
 
 <!-- Modal -->
-<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-        <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      <div class="modal-body">
-        <form name="frm_map" id="frm_map">
-          <h5 class="modal-title text-center" id="modalTitle">Pick from our selection of hand picked cities</h5>
-        <select name="country" id="country" class="form-control input-lg">
-    <option value="">Select country</option>
-   </select>
-   <br>
-   <select name="state" id="state" class="form-control input-lg">
-    <option id="currentSelection" value="">Select state</option>
-   </select>
-    <p id="orTagLine"><span id="orTag">&nbsp;OR&nbsp;</span></p>
-    <h5 class="modal-title text-center" id="modalTitle">Search anywhere in the world.</h5>
-   <input type="text" name="address" id="address" class="newAddress form-control " value="Dublin, Ireland" aria-label="city-name" aria-describedby="city-name">
-   </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner imageInnerButton mx-auto" data-dismiss="modal" value="Show" id="submit" onclick="updateCity();">Let's Go</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="hiddenDiv rounded text-center">
-  <p id="hiddenDivInner">Current Weather</p> 
-  <div class="icon sun-shower mx-auto">
-  <div class="cloud"></div>
-  <div class="sun">
-    <div class="rays"></div>
-  </div>
-  <div class="rain"></div>
-</div>
-
-<div class="icon thunder-storm mx-auto">
-  <div class="cloud"></div>
-  <div class="lightning">
-    <div class="bolt"></div>
-    <div class="bolt"></div>
-  </div>
-</div>
-
-<div class="icon cloudy mx-auto">
-  <div class="cloud"></div>
-  <div class="cloud"></div>
-</div>
-
-<div class="icon flurries mx-auto">
-  <div class="cloud"></div>
-  <div class="snow">
-    <div class="flake"></div>
-    <div class="flake"></div>
-  </div>
-</div>
-
-<div class="icon sunny mx-auto">
-  <div class="sun">
-    <div class="rays"></div>
-  </div>
-</div>
-
-<div class="icon rainy mx-auto">
-  <div class="cloud"></div>
-  <div class="rain"></div>
-</div>
-  <div class="alert alert-warning col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
-  </div>
-    <div class="cityInfo">
-    </div>
-     <input type="hidden" name="radius" id="radius" value="15">
-     <div class="form-group">
-       <p id="hiddenDivInner">Pick from a large list of amenities to mark them on the map. <br>Click on a icon for more info.</p>
-     <select class="form-control col-sm-4 mx-auto" id="type_holder">
-    </select>
-    </div>
-     <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow imageInner imageInnerButton" data-dismiss="modal" value="Show" id="refreshMap" onclick="updateCity();">Update Map</button>
-     <div class="row justify-content-center">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div id="map"></div>
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span> <!-- X close Button Design -->
+          </button>
+          <div class="modal-body">
+            <form name="frm_map">
+              <h5 class="modalTitle text-center">Pick from our selection of hand picked destinations</h5>
+              <select name="country" id="country" class="form-control input-lg">
+                <option value="">Select country</option> <!-- Dropdown of Continents, Values Loaded from json file -->
+              </select>
+              <br>
+              <select name="state" id="state" class="form-control input-lg">
+                <option id="currentSelection" value="">Select state</option> <!-- Dynamic Dropdown of Cities, Values Loaded from json file -->
+              </select>
+              <p id="orTagLine"><span id="orTag">&nbsp;OR&nbsp;</span></p>
+              <h5 class="modalTitle text-center">Search anywhere in the world</h5>
+              <input type="text" name="address" id="address" class="form-control " value="Dublin, Ireland" aria-label="city-name" aria-describedby="city-name">
+            </form>
           </div>
+          <div class="modal-footer">
+            <button type="button" id="submit" class="btn btn-lg btn-outline-warning hvr-grow-shadow mx-auto" data-dismiss="modal" value="Show" onclick="updateCity();">Let's Go</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hidden Div displays when Modal "Lets Go" button is clicked  -->
+    <div class="hiddenDiv rounded text-center">
+      <p class="hiddenDivInner">Current Weather</p> 
+      
+      <!-- Animated weather display changes depending on current weather data CSS properties in weather-display.css  -->
+      <div class="icon sun-shower mx-auto">
+        <div class="cloud">
+        </div>
+        <div class="sun">
+          <div class="rays">
+          </div>
+        </div>
+        <div class="rain">
+        </div>
       </div>
       
-      <footer>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
-          <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
-        </nav>
-      </footer>
-  </div>
+      <div class="icon thunder-storm mx-auto">
+        <div class="cloud">
+        </div>  
+        <div class="lightning">
+          <div class="bolt">
+          </div>  
+          <div class="bolt">
+          </div>  
+        </div>
+      </div>
+      
+      <div class="icon cloudy mx-auto">
+        <div class="cloud">
+        </div>  
+        <div class="cloud">
+        </div>  
+      </div>
+      
+      <div class="icon flurries mx-auto">
+        <div class="cloud">
+        </div>  
+        <div class="snow">
+          <div class="flake">
+          </div>  
+          <div class="flake">
+          </div>  
+        </div>
+      </div>
+      
+      <div class="icon sunny mx-auto">
+        <div class="sun">
+          <div class="rays">
+          </div>  
+        </div>
+      </div>
+    
+      <div class="icon rainy mx-auto">
+        <div class="cloud">
+        </div>  
+        <div class="rain">
+        </div>  
+      </div>
+      
+      <!-- Bootstrap alert displaying the current weather info. for the area selected. Colour changes depending on weather -->
+      <div class="alert alert-warning col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
+      </div>
+      
+      <div id="cityInfo"> <!-- If a dynamic dropdown is choosen in the Modal cityInfo will have an image and text about the area, if not choosen it will be blank -->
+      </div>
+      
+      <div class="form-group">
+        <p class="hiddenDivInner">Pick from a large list of amenities to mark them on the map</p>
+          <select class="form-control col-sm-4 mx-auto" id="type_holder"> <!-- Dropdown with types of amenities that can be picked from -->
+          </select>
+      </div>
+      
+        <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow" value="Show" id="refreshMap" onclick="updateCity();">Update Map</button>
+        <div class="row justify-content-center">
+          <div class="col">
+            <p class="hiddenDivInner">Click on an icon for more info</p>
+            <div id="map"> <!-- The map -->
+            </div>   
+          </div>
+        </div>
+          
+          <footer>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
+              <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+            </nav>
+          </footer>
+    </div>
    
 
     <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
