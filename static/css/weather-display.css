@@ -11,7 +11,7 @@
     
 }
 
-/* Each weather icon is made up of a number of small icons below*/
+/* Each weather icon is made up of a number of small icons and added together depending of what parent is called*/
 .cloud {
   position: absolute;
   z-index: 1;

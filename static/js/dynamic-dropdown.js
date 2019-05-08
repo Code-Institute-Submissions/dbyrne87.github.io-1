@@ -51,9 +51,3 @@ function displayDiv() {
    }); 
 }
 
-function updateCity(){
-renderMap();
-writeTheWeather();
-writeToDocument();
-displayDiv();
-}
