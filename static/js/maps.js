@@ -1,3 +1,4 @@
+ /* global $ */
 $(document).ready(function(){
     // type_holder
     // <div><label><input type="checkbox" class="types" value="mosque" />Mosque</label></div>
@@ -22,14 +23,16 @@ function capitalizeFirstLetter(string) {
 var map;
 var infowindow;
 var autocomplete;
-var selectedTypes = [];
+var selectedTypes;
 var service;
 
+$.getJSON("/data/country_state_city.json", function( data ) {
 $("#state").on('click', function(){
     var val = $('#state').val();
-    if (val == 7) {
-        $('#address').val("Nairobi, Kenya");
+    if (val != "") {
+        $('#address').val(data[val-1].name);
         }
+});
 });
 
 function initMap()

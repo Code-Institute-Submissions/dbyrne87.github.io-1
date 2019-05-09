@@ -33,303 +33,480 @@
   "id":"7",
   "name":"Nairobi, Kenya",
   "parent_id":"1",
-  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/0c/9a/52/a8/miradouro-da-lua.jpg",
   "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
-  
+ 
  }, 
  {
   "id":"8",
   "name":"Luanda, Angola",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Angola as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+ 
  }, 
  {
   "id":"9",
   "name":"Agadir, Morocco",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Agadir as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"10",
   "name":"Cape Town, South Africa",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"11",
   "name":"Cairo, Egypt",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"12",
   "name":"Port Louis, Mauritius",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"13",
   "name":"Dar es Salaam, Tanzania",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"14",
   "name":"Abuja, Nigeria",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"15",
   "name":"Tunis, Tunisia",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"16",
   "name":"Johannesburg, South Africa",
-  "parent_id":"1"
+  "parent_id":"1",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"17",
   "name":"Bangkok, Thailand",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"18",
   "name":"Tokyo, Japan",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"19",
   "name":"Beijing, China",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"20",
   "name":"Shanghai, China",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"21",
   "name":"Hong Kong, China",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"22",
   "name":"Kyoto, Japan",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"23",
   "name":"Mumbai, India",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"24",
   "name":"Macau, China",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"25",
   "name":"Singapore, Singapore",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"26",
   "name":"Kuala Lumpur, Malaysia",
-  "parent_id":"2"
+  "parent_id":"2",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"27",
   "name":"Rome, Italy",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"28",
   "name":"Dublin, Ireland",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"29",
   "name":"Paris, France",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"30",
   "name":"Athens, Greece",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"31",
   "name":"Barcelona, Spain",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"32",
   "name":"Edinburgh, Scotland",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"33",
   "name":"London, United Kingdom",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"34",
   "name":"Istanbul, Turkey",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"35",
   "name":"Amsterdam, Netherlands",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"36",
   "name":"Milan, Italy",
-  "parent_id":"3"
+  "parent_id":"3",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"37",
   "name":"Buenos Aires, Argentina",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"38",
   "name":"Rio de Janeiro, Brazil",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"39",
   "name":"Santiago, Chile",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"40",
   "name":"Sao Paulo, Brazil",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"41",
   "name":"Bogota, Colombia",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"42",
   "name":"Lima, Peru",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"43",
   "name":"Caracas, Venezuela",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"44",
   "name":"Cartagena, Colombia",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"45",
   "name":"Quito, Ecuador",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"46",
   "name":"Salvador, Brazil",
-  "parent_id":"4"
+  "parent_id":"4",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"47",
   "name":"Toronto, Canada",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"48",
   "name":"New York City, United States",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"49",
   "name":"Vancouver, Canada",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"50",
   "name":"Montreal, Canada",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"51",
   "name":"Chicago, United States",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"52",
   "name":"Calgary, Canada",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"53",
   "name":"Los Angeles, United States",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"54",
   "name":"Mexico City, Mexico",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"55",
   "name":"Houston, United States",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }, 
  {
   "id":"56",
   "name":"Havana, Cuba",
-  "parent_id":"5"
+  "parent_id":"5",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"57",
   "name":"Sydney, Australia",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai ,watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"58",
   "name":"Melbourne, Australia",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"59",
   "name":"Auckland, New Zealand",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"60",
   "name":"Christchurch, New Zealand",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"61",
   "name":"Brisbane, Australia",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"62",
   "name":"Perth, Australia",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"63",
   "name":"Adelaide, Australia",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"64",
   "name":"Port Moresby, Papua New Guinea",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"65",
   "name":"Sunshine Coast, Australia",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  },
  {
   "id":"66",
   "name":"Dili, East Timor",
-  "parent_id":"6"
+  "parent_id":"6",
+  "image_url":"https://media-cdn.tripadvisor.com/media/photo-b/1024x250/15/4d/45/88/nairobi.jpg",
+  "text":"Known as the safari capital of Africa, this former Maasai watering hole is an energetic, modern city that offers a fascinating introduction to both wildlife and nightlife. Music clubs pulse with life, shops and markets bustle, and international restaurants sit alongside those offering more regional fare. Top sights include the Karen Blixen Museum, Giraffe Centre and the black rhinos of Nairobi National Park. The compact city center is safe to walk in and taxis make other areas accessible."
+
  }
 ]

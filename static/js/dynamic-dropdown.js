@@ -1,3 +1,4 @@
+ /* global $ */
 $(document).ready(function(){
 
  load_json_data('country');
