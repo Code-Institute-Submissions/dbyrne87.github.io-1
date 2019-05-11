@@ -6,6 +6,7 @@ body{
     background-repeat: no-repeat;
     color: white;
     font-family: 'Sniglet', 'Comfortaa', cursive;
+    
 }
 
 @media (max-width: 415px) { /* Change the image on small screens so its not stretched*/
@@ -13,6 +14,7 @@ body{
     background: url("/static/assets/images/city-top-crop-sm.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
+    
   }
 }
 
@@ -20,6 +22,7 @@ body{
 @keyframes link-backgrounds {
   from {background-color: white;}
   to {background-color: #F09819;}
+  
 }
 
 .btn{
@@ -28,26 +31,30 @@ body{
     border: solid #FFC107 5px;
     font-weight: bold;
     border-radius: 40px;
+    
 }
 
 .btn:hover{
     animation-name: link-backgrounds;
     animation-duration: 4s;
     color: white;
+    
 }
 
 /* Navbar CSS */
 .navbar-nav{
     flex-direction: row;
+    
 }
 
 .social-icon{
-  margin-right: 40px;
-  display: inline-block;
-  color: #FDFDFF;
-  border: none;
-  background-color: #FFC107;
-  font-size: x-large;
+    margin-right: 40px;
+    display: inline-block;
+    color: #FDFDFF;
+    border: none;
+    background-color: #FFC107;
+    font-size: x-large;
+
 }
 
 .social-icon:hover{
@@ -57,7 +64,8 @@ body{
 
 @media (max-width:500px) {
 .social-icons{
-  width: 29px;
+    width: 29px;
+    
 } 
 }
 
@@ -66,32 +74,38 @@ body{
     margin-top: 30vh;
     font-weight: bold;
     font-size: xx-large;
+    
 }
 
 /*Modal CSS */
 .modalTitle{
-  color: black;
+    color: black;
+  
 }
 
 .close{
-  margin: 10px 20px 0 0;
+    margin: 10px 20px 0 0;
+    
 }
 
 #orTagLine{/*Horizontal Style Rule */
-  width:100%; 
-  text-align:center; 
-  border-bottom: 1px solid #000; 
-  line-height:0.1em; 
-  margin-top:28px;
+    width:100%; 
+    text-align:center; 
+    border-bottom: 1px solid #000; 
+    line-height:0.1em; 
+    margin-top:28px;
+    
 }
 
 #orTag{ /* The "OR" text in the #orTagLine*/
-  background:#fff; 
-  color: black;
+    background:#fff; 
+    color: black;
+    
 }
 
 .pac-container { /*Need this value so the autocomplete dropdown is not hidden in background*/
-   z-index: 1050 !important;
+     z-index: 1050 !important;
+     
 }
 
 /*Hidden Div Section*/
@@ -101,6 +115,7 @@ body{
     padding: 50px;
     border:10px solid #FFC107;
     background-image: linear-gradient(to right, #1A2980, #26D0CE);
+    
 }
 
 .hiddenDivInner{ /*Hidden Div Headings*/
@@ -109,28 +124,39 @@ body{
     
 }
 
-#cityInfo{ /* If City Info has content then it is displayed*/
-  border-bottom: solid #FFC107 5px;
-  margin-bottom: 20px;
+#weather{
+    font-weight: bold;
+    font-size: xx-large;
+  
 }
 
+#border{
+    border-bottom: solid #FFC107 5px;
+    margin-bottom: 20px;
+  
+}
+
+
 #refreshMap{ /*Additional button style*/
-  margin-bottom: 20px;  
+    margin-bottom: 20px;  
+  
 }
 
 /*Map Style*/
 #map {
     min-height: 500px;
+    
 }
 
 #infoWindowHeader{ /*Header style of map infowindow, add to html when icon clicked*/
-  color: black;
-  font-weight: bold;
+    color: black;
+    font-weight: bold;
   
 }
 
 .gm-style-iw{ /*Content of infowindow*/
-  color:black;
+    color:black;
+  
 }
 
 

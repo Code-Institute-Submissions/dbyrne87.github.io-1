@@ -1,12 +1,9 @@
  /* global $ */
 $(document).ready(function(){
-    // type_holder
-    // <div><label><input type="checkbox" class="types" value="mosque" />Mosque</label></div>
-
+    //All the types of amenities that can be searched for in the map
     var types = ['airport','amusement_park','aquarium','art_gallery','atm','bank','bar','bowling_alley','bus_station','cafe','campground','car_rental','casino','church','embassy','gas_station','gym','hair_care','hindu_temple','hospital','lodging','meal_takeaway','mosque','movie_theater','museum','night_club','park','parking','pharmacy','restaurant','shopping_mall','spa','stadium','subway_station','synagogue','taxi_stand','train_station','transit_station','zoo'];
     var html = '';
     
-
     $.each(types, function( index, value ) {
         var name = value.replace(/_/g, " ");
         html += '<option name="pickOne" id="whatValue" value="'+ value +'">'+ capitalizeFirstLetter(name) + '</option>';

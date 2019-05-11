@@ -80,9 +80,13 @@
     
     <!-- Hidden Div displays when Modal "Lets Go" button is clicked  -->
     <div class="hiddenDiv rounded text-center">
-      <p class="hiddenDivInner">Current Weather</p> 
       
-      <!-- Animated weather display changes depending on current weather data CSS properties in weather-display.css  -->
+      <div id="cityInfo"> <!-- If a dynamic dropdown is choosen in the Modal cityInfo will have an image and text about the area, if not choosen it will be blank -->
+      </div>
+      
+      <!-- Bootstrap alert displaying the current weather info. for the area selected. Colour changes depending on weather -->
+      <p id="weather">Current Weather</p>
+        <!-- Animated weather display changes depending on current weather data CSS properties in weather-display.css  -->
       <div class="icon sun-shower mx-auto">
         <div class="cloud">
         </div>
@@ -136,13 +140,10 @@
         <div class="rain">
         </div>  
       </div>
-      
-      <!-- Bootstrap alert displaying the current weather info. for the area selected. Colour changes depending on weather -->
       <div class="alert alert-warning col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
       </div>
       
-      <div id="cityInfo"> <!-- If a dynamic dropdown is choosen in the Modal cityInfo will have an image and text about the area, if not choosen it will be blank -->
-      </div>
+      <div class="col-sm-12" id="border"></div> <!-- Orange Bottom Border -->
       
       <div class="form-group">
         <p class="hiddenDivInner">Pick from a large list of amenities to mark them on the map</p>
