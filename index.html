@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Trip Finder</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="Travel Site to allow users to search for their next holiday destination and find detailed information based on their search results">
     <meta name="keywords" content="holiday, holidays, holiday packages, travel, planning, hotel, hotels, motel, bed and breakfast, inn, review, reviews, popular, plan, map, maps, golf, ski, articles, attractions, advice, restaurants"/>
@@ -25,7 +25,7 @@
     <!-- Navbar Section -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
-        <a class="navbar-brand" href="/index.html" id="getaway"> <i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+        <a class="navbar-brand" href="/index.html"> <i class="fab fa-earlybirds"></i>  TripFinder.com</a>
         <ul class="navbar-nav ml-auto">
           <li class="social-icons">
             <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -68,7 +68,7 @@
               </select>
               <p id="orTagLine"><span id="orTag">&nbsp;OR&nbsp;</span></p>
               <h5 class="modalTitle text-center">Search anywhere in the world</h5>
-              <input type="text" name="address" id="address" class="form-control " value="Dublin, Ireland" aria-label="city-name" aria-describedby="city-name">
+              <input type="text" name="address" id="address" class="form-control " value="Dublin, Ireland" aria-label="address" aria-describedby="address">
             </form>
           </div>
           <div class="modal-footer">
@@ -162,7 +162,7 @@
           
           <footer>
             <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
-              <a class="navbar-brand" href="index.html" id="getaway"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+              <a class="navbar-brand" href="index.html"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
             </nav>
           </footer>
     </div>
@@ -172,10 +172,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXG32paXW2Dkz1lkI41-Rmk0WraOaF374&libraries=places&callback=initMap" defer></script>
-    <script type="text/javascript" src="/static/js/dynamic-dropdown.js" ></script>  
-    <script type="text/javascript" src="/static/js/maps.js"></script>
-    <script type="text/javascript" src="/static/js/weather.js"></script>
-    <script type="text/javascript" src="/static/js/dynamic-city-info.js"></script>
+    <script src="/static/js/dynamic-dropdown.js"></script>  
+    <script src="/static/js/maps.js"></script>
+    <script src="/static/js/weather.js"></script>
+    <script src="/static/js/dynamic-city-info.js"></script>
     
     <script>
       function updateCity(){
