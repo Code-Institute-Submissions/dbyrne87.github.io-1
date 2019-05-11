@@ -110,11 +110,16 @@ service = new google.maps.places.PlacesService(map);
 
 var request = { placeId: place.place_id };
 
-service.getDetails(request, function(details, status) { //When a marker is clicked open a Infowindow to show details of the place choosen 
+service.getDetails(request, function(details, status) { //When a marker is clicked open a Infowindow to show details of the place 
   google.maps.event.addListener(marker, 'click', function() {
-    infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address +'<br><a href=' + details.website + " target='_blank'>Visit Their Website</a><br>" + details.international_phone_number + "<br>Rated: " + details.rating + "/5 on Google Reviews");
+      if (details == null ){
+            infowindow.setContent('<p id="infoWindowHeader">Sorry No Place data available for this waypoint, Please try another one</p>');  
+      } else {
+          infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address +'<br><a href=' + details.website + " target='_blank'>Visit Their Website</a><br>" + details.international_phone_number + "<br>Rated: " + details.rating + "/5 on Google Reviews");
+
+      }
     infowindow.open(map, this);
-    console.log(details);
+    console.log(details.name);
    });
  });
 }
