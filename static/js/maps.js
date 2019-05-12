@@ -1,4 +1,4 @@
- /* global $ */
+/* global $ */
     //All the types of amenities that can be searched for in the map
     var types = ["airport","amusement_park","aquarium","art_gallery","atm","bank","bar","bowling_alley","bus_station","cafe","campground","car_rental","casino","church","embassy","gas_station","gym","hair_care","hindu_temple","hospital","lodging","meal_takeaway","mosque","movie_theater","museum","night_club","park","parking","pharmacy","restaurant","shopping_mall","spa","stadium","subway_station","synagogue","taxi_stand","train_station","transit_station","zoo"];
     var html;
@@ -114,9 +114,12 @@ service.getDetails(request, function(details, status) { //When a marker is click
   google.maps.event.addListener(marker, 'click', function() {
       if (details == null ){
             infowindow.setContent('<p id="infoWindowHeader">Sorry No Place data available for this waypoint, Please try another one</p>');  
-      } else {
+      } else if (details.rating == undefined ){ 
+          infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address +'<br><a href=' + details.website + " target='_blank'>Visit Their Website</a><br>" + details.international_phone_number);
+      } else if (details.international_phone_number == undefined ){ 
+          infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address);
+       } else {
           infowindow.setContent('<p id="infoWindowHeader">' + details.name + '</p>' + details.formatted_address +'<br><a href=' + details.website + " target='_blank'>Visit Their Website</a><br>" + details.international_phone_number + "<br>Rated: " + details.rating + "/5 on Google Reviews");
-
       }
     infowindow.open(map, this);
     console.log(details.name);
