@@ -1,55 +1,58 @@
-# Code Institute Milestone Project - 1
-## The Jones Music
 
-A clean and responsive website for a band, targeting both their current and potential future audience.
-This website is used to promote the bands music while also making it easy for potential clients and/or fans to book them to perform at events, weddings etc.
-The website layout was based around their primary and secondary targets for the website.
+# Code Institute Milestone Project - 2
+## [TripFinder.com](https://dbyrne87.github.io/)
+![Screenshot of website homepage](https://github.com/dbyrne87/dbyrne87.github.io/blob/master/static/assets/images/Screenshot-wireframe.jpg?raw=true)
+A simple website designed to allow users to easily search for their next holiday destination.
+This website can be used to find the following,
+1.  Select a destination city
+2.  Find tourist attractions
+3.  Find accommodation
+4.  Find bars and restaurants
+5.  A selection of other amenities
+
+The websites layout was based around the primary targets in the brief while keeping the design as simple as possible.
 
 ## UX
 
-Firstly a set of wireframe diagrams where made to show the layout of the website on different screen sizes and was also used to iron out any potential issues that arose before coding the website.[Link To Wireframe](https://xd.adobe.com/view/93b734fd-348a-414f-69f4-79c2324e39f7-e586/)
+Firstly a set of wireframe diagrams where made to show the layout of the website on different screen sizes and was also used to iron out any potential issues that arose before coding the website.[Link To Wireframe](https://xd.adobe.com/view/72ebf153-1f38-4d5f-4294-b71ddea2af8e-04da/?fullscreen&hints=off)
+<iframe width="900" height="600" src="https://xd.adobe.com/embed/72ebf153-1f38-4d5f-4294-b71ddea2af8e-04da/?fullscreen&hints=off" frameborder="10" allowfullscreen></iframe>
 
-The websites layout is designed so that each primary and secondary target has its own section on the page and is easily found both via the fixed top navbar or by scrolling on the page itself.
-For the user I did not want to overwhelm them with information so I kept unnecessary content such as the "Book Now" form to it's own page and give them a simple Contact Us form instead. 
+The websites layout is designed as simply and as user friendly as possible while allowing the user to easily navigate through the steps needed to find their next holiday destination, the user can easily finding the local amenities they would like to find through a simple dropdown.  
 
-Depending on the screen size some content is removed but is viewable on a dedicated page, an example of this is the Band section in the homepage is not viewable on mobile devices but is viewable in the Our Band webpage. 
+As the design is simple the design does not need to change dramatically through different screen sizes.  
 
 ## Features
+The Landing page focuses the user to the button in the centre of the screen to start their search, which leads the user nicely through the steps and helps prevent user error during the search. 
 
-### Homepage
-The Navbar is used to bring the fans/clients directly to the content they wish to see immediatly, it is fixed also so that they can use it no matter where they are on a page. Links to the bands social media are also seen here and at the bottom of each webpage.
+I used Bootstrap throughout the website so that the layout is responsive no matter what the screen size. 
 
-I used the Bootstrap carousel with a background image to catch the users eye immediatly and promote the bands next gig and their availabilty for events and weddings.
+The Bootstrap Modal is broken into two sections, 
 
-The What We Do section provides an easily readable version of what the band offers.
+ 1. The user can easily search from a list of 60 places by firstly choosing a continent they wish to visit. This will then dynamically load a list of cities into the second dropdown from which to choose from. If they click the submit button this will generate an image and text giving details of the area chosen. The data is received from a local Json file. 
+ 2. Alternatively if the user knows the city/place they are looking for then they can search for this in the Autocomplete input text field field. This will search for the place as they type and will give them suggestions so that they make sure that they are going to the correct place. 
 
-The Band section explains each band members role, it is also clickable should the user want to find out more about the band.
+When the user chooses a place and clicks submit information is loaded  and shown, this area is broken into 2 or 3 sections depending if the user used the dropdowns to find a place or the autocomplete input field.
 
-Our Music section provides a small number of videos and audio of the bands music while the button at the button makes it easy for the user to see more. 
+If the user chose the dropdowns then 3 sections will be loaded,
 
-The following section is split in two, the left is a carousel showing some recent reviews of the band to build trust. The right is a Contact Us section should the user have any questions.
+ - A section with an image and text giving details of the area chosen. This info is generated from a local Json file. 
+ - Weather Data, with an animated image and text (using bootstrap alert) giving the current weather, current temperature and max temperature for the area chosen. The animated image plus the colour of the alert field will change depending on the weather. The data relies heavily on the Open weather maps api. 
+ - Map feature relies heavily on the Google Places Api. The map is centred on the place the user selected and shows all the local airports using icons as default. I chose Airports as the user would most likely be travelling to the area by this method and so it would be a good starting point for referencing other amenities by how far from the airport the user is flying in/out of. The user can pick from a dropdown a large list of amenities (in alphabetical order). When they refresh the map it will generate a number of icons marking the place of the amenity chosen by the user. If the user clicks on any icon it will give the user information through an infoWindow of,
+ - The Place Name
+ - Address
+ - Website Link
+ - Phone Number
+ - Google User Rating
 
-#### Future Development
-In a future version I would like to add a map feature showcasing the venues the band have played in using droplets on the map with information being shown such as Place Name, Date, Images, Video, Reviews etc. when they are clicked. 
+The above information relies heavily on information received from the Google Places API again.
+If certain or no information is not available through the Api then the infoWindow will leave the field empty.   
+##  Future Development
+In a future version I would like to,
 
-In a future version provide a way for users to purchase music from the band either by download or by CD. 
-
-### Our Band Page
-
-Used to provide the user with more information about the band and to showcase past accomplishments and a collage of photo's to show off the band members.
-
-### Our Music Page
-
-Provides a full range of content of the bands music videos and audio.
-
-### Events Page
-
-Provides information of the types of events that they do while also giving the client video of a past type of event to showcase what they offer. 
-
-### Book Now Page
-
-A simple booking form used by the client to book a type of event for a certain date.
-While allowing the band easily collect the information they need.  
+ - Connect to the tripadvisor.com Api to allow a large amount of data to be available to the user and that will be updated constantly automatically so the site will not rely on static Json data files.
+ - Upgrade the Open Weather Maps Api so that more information is available such as weekly forecasts, hour by hour forecast and historical data. 
+ - Add a planner application to allow the user plan their trip and easily add points of interest from the map or add notes which can then be emailed to them so it can be used on their journey. 
+ - Add the Google Directions Api functionality to the map and to the planner so that the user can get an all in one application for planning their journey.  
 
 ## Technologies Used
 HTML5 & CSS3
