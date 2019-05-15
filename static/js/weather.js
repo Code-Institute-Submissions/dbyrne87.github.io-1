@@ -33,12 +33,12 @@ xhr.send();
 }
         
 
-function writeTheWeather(cb) { // Work with Json Data returned for area
+function writeTheWeather() { // Work with Json Data returned for area
     getWeatherData(function(data) {
         
         $(".sun-shower, .thunder-storm, .cloudy, .flurries, .sunny, .rainy").css("display", "none"); // Clears any icons from previous searches
         
-        if ([data.weather[0].main] == "Clouds", "Fog", "Mist") {// Displays the correct icon an alert background colour depending on the weather
+        if ([data.weather[0].main] == "Clouds" || [data.weather[0].main] == "Fog"|| [data.weather[0].main] =="Mist") {// Displays the correct icon an alert background colour depending on the weather
             $(".cloudy").css("display", "block");
             $("#weatherdata").attr('class', 'alert alert-secondary col-sm-4 mx-auto text-center');
             
@@ -62,7 +62,7 @@ function writeTheWeather(cb) { // Work with Json Data returned for area
             $(".flurries").css("display", "block");
             $("#weatherdata").attr('class', 'alert alert-light col-sm-4 mx-auto text-center');
         
-        } else if ([data.weather[0].main] ==  "Smoke", "Haze", "Dust", "Sand", "Dust", "Ash", "Squall", "Tornado") { 
+        } else if ([data.weather[0].main] ==  "Smoke"|| [data.weather[0].main] == "Haze"|| [data.weather[0].main] == "Dust"|| [data.weather[0].main] == "Sand"|| [data.weather[0].main] == "Dust"|| [data.weather[0].main] == "Ash"|| [data.weather[0].main] == "Squall"|| [data.weather[0].main] == "Tornado") { 
             $("#weatherdata").attr('class', 'alert alert-warning col-sm-4 mx-auto text-center');
         }
         // Adds the weather data in a readable response to the user
