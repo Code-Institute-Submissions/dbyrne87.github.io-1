@@ -8,7 +8,7 @@
     <meta name="keywords" content="holiday, holidays, holiday packages, travel, planning, hotel, hotels, motel, bed and breakfast, inn, review, reviews, popular, plan, map, maps, golf, ski, articles, attractions, advice, restaurants"/>
     <meta name="author" content="Declan Byrne">
     
-    <link rel="icon" href="/static/assets/images/bird_cdb_icon.ico"> <!-- Owl Icon -->
+    <link rel="icon" href="/static/assets/images/bird_cdb_icon.ico" alt="website owl icon"> <!-- Owl Icon -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -44,13 +44,13 @@
     </header>
   
     <!-- Main Display -->
-    <div class="align-self-center text-center">
+    <section class="align-self-center text-center">
       <p id="imageInnerText">Your Journey Starts Here</p>
       <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow" data-toggle="modal" data-target="#modal">Where To?</button>
-    </div>
+    </section>
 
 <!-- Modal -->
-    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+    <section class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
@@ -60,11 +60,11 @@
             <form name="frm_map">
               <h5 class="modalTitle text-center">Pick from our selection of hand picked destinations</h5>
               <select name="country" id="country" class="form-control input-lg">
-                <option value="">Select country</option> <!-- Dropdown of Continents, Values Loaded from json file -->
+                <option value="">Select Continent</option> <!-- Dropdown of Continents, Values Loaded from json file -->
               </select>
               <br>
               <select name="state" id="state" class="form-control input-lg">
-                <option id="currentSelection" value="">Select state</option> <!-- Dynamic Dropdown of Cities, Values Loaded from json file -->
+                <option id="currentSelection" value="">Select City</option> <!-- Dynamic Dropdown of Cities, Values Loaded from json file -->
               </select>
               <p id="orTagLine"><span id="orTag">&nbsp;OR&nbsp;</span></p>
               <h5 class="modalTitle text-center">Search anywhere in the world</h5>
@@ -76,18 +76,18 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     
     <!-- Hidden Div displays when Modal "Lets Go" button is clicked  -->
-    <div class="hiddenDiv rounded text-center">
+    <main class="hiddenDiv rounded text-center">
       
-      <div id="cityInfo"> <!-- If a dynamic dropdown is choosen in the Modal cityInfo will have an image and text about the area, if not choosen it will be blank -->
-      </div>
+      <article id="cityInfo"> <!-- If a dynamic dropdown is choosen in the Modal cityInfo will have an image and text about the area, if not choosen it will be blank -->
+      </article>
       
       <!-- Bootstrap alert displaying the current weather info. for the area selected. Colour changes depending on weather -->
       <p id="weather">Current Weather</p>
         <!-- Animated weather display changes depending on current weather data CSS properties in weather-display.css  -->
-      <div class="icon sun-shower mx-auto">
+      <figure class="icon sun-shower mx-auto">
         <div class="cloud">
         </div>
         <div class="sun">
@@ -96,9 +96,9 @@
         </div>
         <div class="rain">
         </div>
-      </div>
+      </figure>
       
-      <div class="icon thunder-storm mx-auto">
+      <figure class="icon thunder-storm mx-auto">
         <div class="cloud">
         </div>  
         <div class="lightning">
@@ -107,16 +107,16 @@
           <div class="bolt">
           </div>  
         </div>
-      </div>
+      </figure>
       
-      <div class="icon cloudy mx-auto">
+      <figure class="icon cloudy mx-auto">
         <div class="cloud">
         </div>  
         <div class="cloud">
         </div>  
-      </div>
+      </figure>
       
-      <div class="icon flurries mx-auto">
+      <figure class="icon flurries mx-auto">
         <div class="cloud">
         </div>  
         <div class="snow">
@@ -125,47 +125,49 @@
           <div class="flake">
           </div>  
         </div>
-      </div>
+      </figure>
       
-      <div class="icon sunny mx-auto">
+      <figure class="icon sunny mx-auto">
         <div class="sun">
           <div class="rays">
           </div>  
         </div>
-      </div>
+      </figure>
     
-      <div class="icon rainy mx-auto">
+      <figure class="icon rainy mx-auto">
         <div class="cloud">
         </div>  
         <div class="rain">
         </div>  
-      </div>
-      <div class="alert alert-warning col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
-      </div>
+      </figure>
+      
+      <article class="alert alert-warning col-sm-4 mx-auto text-center" role="alert" id="weatherdata">
+      </article>
       
       <div class="col-sm-12" id="border"></div> <!-- Orange Bottom Border -->
       
-      <div class="form-group">
+      <form class="form-group">
         <p class="hiddenDivInner">Pick from a large list of amenities to mark them on the map</p>
           <select class="form-control col-sm-4 mx-auto" id="type_holder"> <!-- Dropdown with types of amenities that can be picked from -->
           </select>
-      </div>
+      </form>
       
         <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow" value="Show" id="refreshMap" onclick="updateCity();">Update Map</button>
-        <div class="row justify-content-center">
+        
+        <section class="row justify-content-center">
           <div class="col">
             <p class="hiddenDivInner">Click on an icon for more info</p>
             <div id="map"> <!-- The map -->
             </div>   
           </div>
-        </div>
+        </section>
           
           <footer>
             <nav class="navbar navbar-expand-lg navbar-dark bg-warning justify-content-left">
               <a class="navbar-brand" href="index.html"><i class="fab fa-earlybirds"></i>  TripFinder.com</a>
             </nav>
           </footer>
-    </div>
+    </main>
    
 
     <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>

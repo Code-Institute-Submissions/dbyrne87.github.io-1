@@ -7,7 +7,7 @@ $(document).ready(function(){
   
   var html_code = '';
   
-  $.getJSON('/data/country_state_city.json', function(data){ //Get Json data from file
+  $.getJSON('/data/city_info_data.json', function(data){ //Get Json data from file
 
    html_code += '<option value="">Select '+id+'</option>';
    

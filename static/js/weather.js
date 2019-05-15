@@ -69,5 +69,3 @@ function writeTheWeather(cb) { // Work with Json Data returned for area
         $("#weatherdata").html('The weather for ' + data.name + ' is currently "' + data.weather[0].description + '" with a temperature currently at ' + Math.round(data.main.temp-273.15) + '&#8451 and a max temperature of ' + Math.round(data.main.temp_max-273.15) + '&#8451');
     });
 }
-
-

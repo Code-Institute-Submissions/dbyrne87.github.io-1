@@ -20,7 +20,7 @@ var autocomplete;
 var selectedTypes;
 var service;
 
-$.getJSON("/data/country_state_city.json", function( data ) { //If a dropdown value was choosen then add it to the autocomplete field so that it can be found on the map
+$.getJSON("/data/city_info_data.json", function( data ) { //If a dropdown value was choosen then add it to the autocomplete field so that it can be found on the map
 $("#state").on('click', function(){
     var val = $("#state").val();
     if (val != "") {
