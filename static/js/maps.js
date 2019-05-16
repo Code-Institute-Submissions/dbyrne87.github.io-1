@@ -134,7 +134,7 @@ function writeTheWeather() { // Work with Json Data returned for area
             $("#weatherdata").attr('class', 'alert alert-warning col-sm-4 mx-auto text-center');
         }
         // Adds the weather data in a readable response to the user
-        $("#weatherdata").html('The weather for ' + data.name + ' is currently "' + data.weather[0].description + '" with a temperature currently at ' + Math.round(data.main.temp - 273.15) + '&#8451 and a max temperature of ' + Math.round(data.main.temp_max - 273.15) + '&#8451');
+        $("#weatherdata").html('<h3>The weather for ' + data.name + ' is currently "' + data.weather[0].description + '" with a temperature currently at ' + Math.round(data.main.temp - 273.15) + '&#8451 and a max temperature of ' + Math.round(data.main.temp_max - 273.15) + '&#8451</h3>');
     });
 }
 
@@ -147,7 +147,7 @@ function writeToDocument() {
         // Working with JSON data below
         var val = $('#city').val(); //Get the current dropdown value of #city dropdown
         if (val != "") { //If value is not empty then add this data below to #cityInfo, if 8 add this ....and so on 
-            $('#cityInfo').html('<p class="hiddenDivInner">About ' + data[val - 1].name + '</p></br><img style="width: 100%; max-width:1440px; max-height: 250px" src="' + data[val - 1].image_url + '" alt="' + data[val - 1].alt_tag + '"> </br></br> <p id="border">' + data[val - 1].text + '</p>');
+            $('#cityInfo').html('<h2 class="hiddenDivInner">About ' + data[val - 1].name + '</h2></br><img style="width: 100%; max-width:1440px; max-height: 250px" src="' + data[val - 1].image_url + '" alt="' + data[val - 1].alt_tag + '"> </br></br> <h3 id="border">' + data[val - 1].text + '</h3>');
 
 
         } else {
@@ -167,6 +167,8 @@ function displayDiv() { //The fade in effect for the hidden div
         $(".hiddenDiv").css("display", "block");
     });
 }
+
+////////////////////////////////////////////////////////////////////////////////
 
 //All the types of amenities that can be searched for in the map
 var types = ["airport", "amusement_park", "aquarium", "art_gallery", "atm", "bank", "bar", "bowling_alley", "bus_station", "cafe", "campground", "car_rental", "casino", "church", "embassy", "gas_station", "gym", "hair_care", "hindu_temple", "hospital", "lodging", "meal_takeaway", "mosque", "movie_theater", "museum", "night_club", "park", "parking", "pharmacy", "restaurant", "shopping_mall", "spa", "stadium", "subway_station", "synagogue", "taxi_stand", "train_station", "transit_station", "zoo"];

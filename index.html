@@ -8,7 +8,7 @@
     <meta name="keywords" content="holiday, holidays, holiday packages, travel, planning, hotel, hotels, motel, bed and breakfast, inn, review, reviews, popular, plan, map, maps, golf, ski, articles, attractions, advice, restaurants"/>
     <meta name="author" content="Declan Byrne">
     
-    <link rel="icon" href="/static/assets/images/bird_icon.ico" alt="website owl icon"> <!-- Owl Icon -->
+    <link rel="icon" href="/static/assets/images/bird_icon.ico"> <!-- Owl Icon -->
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -50,14 +50,14 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modalTitle">About Us</h1>
+            <h2 class="modalTitle">About Us</h2>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modalTitle" id="modal-info-body">
             <br>
-            <h2>TripFinder.com is simple website designed to allow users to easily search for their next holiday destination. </h2>
+            <h3><b>TripFinder.com is simple website designed to allow users to easily search for their next holiday destination.</b></h3>
             <hr>
             This website can be used to, 
               <ul>
@@ -78,7 +78,7 @@
   
     <!-- Main Display -->
     <section class="align-self-center text-center">
-      <p id="imageInnerText">Your Journey Starts Here</p>
+      <h1 id="imageInnerText">Your Journey Starts Here</h1>
       <button type="button" id="whereTo" class="btn btn-lg btn-outline-warning hvr-grow-shadow" data-toggle="modal" data-target="#modal">Where To?</button>
     </section>
 
@@ -93,11 +93,11 @@
             <form name="frm_map">
               <h5 class="modalTitle text-center">Pick from our selection of hand picked destinations</h5>
               <select id="continent" class="form-control input-lg">
-                <option></option> <!-- Dropdown of Continents, Values Loaded from json file -->
+             <!-- Dropdown of Continents, Values Loaded from json file -->
               </select>
               <br>
               <select id="city" class="form-control input-lg">
-                <option id="currentSelection"></option> <!-- Dynamic Dropdown of Cities, Values Loaded from json file -->
+                <!-- Dynamic Dropdown of Cities, Values Loaded from json file -->
               </select>
               <p id="orTagLine"><span id="orTag">&nbsp;OR&nbsp;</span></p>
               <h5 class="modalTitle text-center">Search anywhere in the world</h5>

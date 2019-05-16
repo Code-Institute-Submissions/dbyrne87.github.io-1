@@ -18,6 +18,21 @@ body{
   }
 }
 
+h1 {
+    font-size: x-large;
+        
+}
+
+h2 {
+    font-size: large;
+        
+}
+
+h3 {
+    font-size: medium;
+    
+}
+
 /*Buttons CSS */
 @keyframes link-backgrounds {
   from {background-color: white;}
@@ -86,16 +101,6 @@ body{
 .close{
     margin: 10px 20px 0 0;
     
-}
-
-h1 {
-    font-size: x-large;
-        
-}
-
-h2 {
-    font-size: large;
-        
 }
 
 #modal-info-body{
