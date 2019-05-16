@@ -111,14 +111,14 @@ After each section was developed I,
 
  1. Land on the page,
 
-		Do you know what the website is for.
-		Is the page clear and user friendly. 
-		Do you know what to do where to go?		 
+		 Do you know what the website is for.
+		 Is the page clear and user friendly. 
+		 Do you know what to do where to go?		 
  
  2.  Modal,
 		
-	    	Is it clear between the two options available what both are for and how they are different.
-	   	Does the dropdown work.
+	         Is it clear between the two options available what both are for and how they are different.
+	   	 Does the dropdown work.
 		 Does the autocomplete feature work. 
 		 Is it clear that you must click the button to proceed to the next step. 
 		
