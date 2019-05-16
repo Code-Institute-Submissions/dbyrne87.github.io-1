@@ -64,7 +64,7 @@ body{
 
 @media (max-width:500px) {
 .social-icons{
-    width: 29px;
+    width: 26px;
     
 } 
 }
@@ -85,6 +85,21 @@ body{
 
 .close{
     margin: 10px 20px 0 0;
+    
+}
+
+h1 {
+    font-size: x-large;
+        
+}
+
+h2 {
+    font-size: large;
+        
+}
+
+#modal-info-body{
+    padding-left: 14px;
     
 }
 
