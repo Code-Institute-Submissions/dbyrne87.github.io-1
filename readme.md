@@ -107,7 +107,7 @@ After each section was developed I,
 2. made sure the code layout is correctly indented so it can be easily read. 
 3. I used the [W3C Validator](https://validator.w3.org/), to make sure both the HTML and CSS was up to current standards and best practice. 
 
-###User scenarios:
+### User scenarios:
 
  1. Land on the page,
 
@@ -148,7 +148,7 @@ I asked friends and family to use the website and to give me feedback on issues 
 
 A few mentioned that the weather data didn't work for certain cities such as Dubai or London.  On investigation it was because the autocomplete was adding commas or hyphens in the autocomplete and so the OpenWeatherMap could not read these. I added some code to only use the text before these which solved this issue. 
 
-###Bugs
+### Bugs
 
 Altough the OpenWeatherMap works in most cases on some ocassions it will still throw an error due to the changing ways autocomplete formats place
 names. For instance Adelaide is "Adelaide SA, Australia" in autocomplete so it is not a readable format for openweathermaps api. I could remove anything 
