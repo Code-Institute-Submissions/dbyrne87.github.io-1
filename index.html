@@ -26,6 +26,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
         <a class="navbar-brand" href="/index.html"> <i class="fab fa-earlybirds"></i>  TripFinder.com</a>
+        <a data-toggle="modal" data-target="#modal-info"> <i class="fas fa-info-circle social-icon"></i></a>
         <ul class="navbar-nav ml-auto">
           <li class="social-icons">
             <a class="social-icon" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
@@ -42,11 +43,33 @@
         </ul>
       </nav>
     </header>
+    
+    
+    <!--Info Modal-->
+    <div class="modal fade" id="modal-info" tabindex="-1" role="dialog" aria-labelledby="modal-info" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modalTitle text-center">About Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   
     <!-- Main Display -->
     <section class="align-self-center text-center">
       <p id="imageInnerText">Your Journey Starts Here</p>
-      <button type="button" class="btn btn-lg btn-outline-warning hvr-grow-shadow" data-toggle="modal" data-target="#modal">Where To?</button>
+      <button type="button" id="whereTo" class="btn btn-lg btn-outline-warning hvr-grow-shadow" data-toggle="modal" data-target="#modal">Where To?</button>
     </section>
 
 <!-- Modal -->
@@ -59,12 +82,12 @@
           <div class="modal-body">
             <form name="frm_map">
               <h5 class="modalTitle text-center">Pick from our selection of hand picked destinations</h5>
-              <select name="country" id="country" class="form-control input-lg">
-                <option value="">Select Continent</option> <!-- Dropdown of Continents, Values Loaded from json file -->
+              <select id="continent" class="form-control input-lg">
+                <option></option> <!-- Dropdown of Continents, Values Loaded from json file -->
               </select>
               <br>
-              <select name="state" id="state" class="form-control input-lg">
-                <option id="currentSelection" value="">Select City</option> <!-- Dynamic Dropdown of Cities, Values Loaded from json file -->
+              <select id="city" class="form-control input-lg">
+                <option id="currentSelection"></option> <!-- Dynamic Dropdown of Cities, Values Loaded from json file -->
               </select>
               <p id="orTagLine"><span id="orTag">&nbsp;OR&nbsp;</span></p>
               <h5 class="modalTitle text-center">Search anywhere in the world</h5>
@@ -173,17 +196,8 @@
     <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXG32paXW2Dkz1lkI41-Rmk0WraOaF374&libraries=places&callback=initMap" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXG32paXW2Dkz1lkI41-Rmk0WraOaF374&libraries=places&callback=initMap" defer></script>  
     <script src="/static/js/maps.js"></script>
-    
-    <script>
-      function updateCity(){
-        renderMap();
-        writeTheWeather();
-        writeToDocument();
-        displayDiv();
-        }
-    </script>
     
   </body>
 </html>

@@ -117,8 +117,8 @@ After each section was developed I,
  
  2.  Modal,
 		
-        Is it clear between the two options available what both are for and how they are different.
-		Does the dropdown work.
+	    Is it clear between the two options available what both are for and how they are different.
+	    Does the dropdown work.
 		Does the autocomplete feature work. 
 		Is it clear that you must click the button to proceed to the next step. 
 		
